@@ -1,0 +1,99 @@
+/* W3.CSS 2.82 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+
+h2{
+	text-align: center;
+}
+.myBody{
+
+	color:#000!important;
+	background-color:#d3d3d3!important;
+
+	background-image: url("images/Cyberspace3.jpg")!important;
+	// background-repeat: no-repeat;
+	 background-size: contain;
+
+}
+
+.myContent{
+
+	//max-width:980px;
+	margin:auto;
+	margin-top:16px!important;
+	margin-bottom:16px!important;
+	//max-width:1400px;
+}
+
+.myPadding, .leftSide, .rightSide{
+	box-sizing: inherit;
+	padding:0 8px;
+	content: "";
+    //display: table;
+    //clear: both;
+}
+.test1{
+
+	padding: 10;
+
+}
+.test1>.test2{
+
+	color: red;
+
+}
+
+
+.leftSide,.rightSide{
+
+	float:left;
+	width:100%;
+	//padding: 0 8px;
+	border-radius: 25px;
+
+}
+
+@media only screen and (min-width:601px){
+
+	.leftSide{
+		width: 33.33%;
+		color:#000!important;
+		//background-color:#fff!important;
+		//padding:0 8px;
+	}
+
+	.rightSide{
+		float: left;
+		padding:0 8px;
+		width: 66.66%;
+		//background-color:#fff!important;
+	}
+
+}
+
+@media only screen and (min-width:700px){
+
+	.leftSide{
+		width: 33.33%;
+		color:#000!important;background-color:#fff!important;
+	}
+	.rightSide{
+
+		width: 66.66%
+	}
+
+}
+
+@media only screen and (min-width:993px){
+
+	.leftSide{
+		width: 33.33%;
+		color:#000!important;background-color:#fff!important;
+	}
+	.rightSide{
+
+		width: 66.66%
+	}
+
+}
