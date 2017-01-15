@@ -8,10 +8,10 @@ h2{
 }
 .myBody{
 
-	color:#000!important;
-	background-color:#d3d3d3!important;
-
-	background-image: url("images/Cyberspace3.jpg")!important;
+	color:#696969!important;
+	//background-color:#0d3880!important;
+	background-color: rgba(0, 0, 0, 0.8);
+	//background-image: url("images/Cyberspace3.jpg")!important;
 	// background-repeat: no-repeat;
 	 background-size: contain;
 
@@ -25,10 +25,13 @@ h2{
 	margin-bottom:16px!important;
 	//max-width:1400px;
 }
-
-.myPadding, .leftSide, .rightSide{
+.myPadding
+{
+	padding:0 50px;
+}
+.leftSide, .rightSide{
 	box-sizing: inherit;
-	padding:0 8px;
+	padding:0 10px;
 	content: "";
     //display: table;
     //clear: both;
@@ -49,12 +52,29 @@ h2{
 
 	float:left;
 	width:100%;
+	//padding: 5px;
 	//padding: 0 8px;
-	border-radius: 25px;
+	//border-radius: 25px;
+	//background-color: rgba(255, 255, 255, 0.2);
+	//border-color: #9ecaed;
+	//box-shadow: 0 0 10px #9ecaed;
+
+}
+.tabcontent{
+	
+	background: -webkit-linear-gradient(#FFF, #FFF, #FFF); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#FFF, #FFF, #FFF); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#FFF, #FFF, #FFF); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#FFF, #FFF, #FFF); /* Standard syntax */
 
 }
 
-@media only screen and (min-width:601px){
+
+.tablinks{
+	width: 100%;
+}
+
+@media only screen and (min-width:900px){
 
 	.leftSide{
 		width: 33.33%;
@@ -72,11 +92,12 @@ h2{
 
 }
 
-@media only screen and (min-width:700px){
+@media only screen and (min-width:900px){
 
 	.leftSide{
 		width: 33.33%;
-		color:#000!important;background-color:#fff!important;
+		color:#000!important;
+		//background-color:#fff!important;
 	}
 	.rightSide{
 
@@ -89,7 +110,8 @@ h2{
 
 	.leftSide{
 		width: 33.33%;
-		color:#000!important;background-color:#fff!important;
+		color:#000!important;
+		//background-color:#fff!important;
 	}
 	.rightSide{
 

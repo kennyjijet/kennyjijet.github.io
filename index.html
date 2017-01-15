@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<title>JITTARIN JETWIRIYANON ULTRA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="mycss.css">
@@ -15,45 +14,82 @@ body {font-family: "Lato", sans-serif;}
 
 ul.tab {
     list-style-type: none;
-    margin: 10px;
-    padding: 0;
+    //margin: 10px;
+    //padding: 0;
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    border-radius: 10px;
+    //border: 1px solid #ccc;
+    
+    //background-color: #0d3880;
+    
+    //border-radius: 60px;
+    -webkit-padding-start: 0px;
+    //border-width: 2px;
+    //border-color: #757575;
 }
 
 /* Float the list items side by side */
-ul.tab li {float: left;}
+ul.tab li {
+    float: left;
+    width: 47%;
+    margin: 5px;
+    //background-color: #67C8FF;
+    border:  solid #1E90FF;
+    border-width: 1px;
+    //border-radius: 5px;
+    box-shadow: 5px 5px 5px #757575;
+    //background-color: #007AFF;
+
+    background: -webkit-linear-gradient(#FFF, #67C8FF, #67C8FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF, #67C8FF, #67C8FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF, #67C8FF, #67C8FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF, #67C8FF, #67C8FF); /* Standard syntax */
+
+
+  //border-width: 2px;
+  //border-color: #757575;
+  //float: left;
+  //border: 1px solid #757575;
+
+    //border-left: 1px;
+    //border-left-color: #757575;
+    //border-left-style: solid;
+
+    //border: 1px solid #ccc;
+
+}
 
 /* Style the links inside the list items */
 ul.tab li a {
     display: inline-block;
-    color: black;
+    color: #FFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+    border-width: 1px;
+    border-radius: 1px;
 }
 
 /* Change background color of links on hover */
 ul.tab li a:hover {
-    background-color: #ddd;
+    background-color: #F3f6Fc;
+    color: black;
 }
 
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {
-    background-color: #ccc;
+    background-color: #27408B;
+    color: #FFF;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 25px;
+    //padding: 6px 12px;
+    //border: 1px solid #ccc;
+    //border-top: none;
+    //border-radius: 25px;
 }
 </style>
 
@@ -77,20 +113,14 @@ ul.tab li a:focus, .active {
     <div class="leftSide">
     
       <div class="w3-white w3-text-grey w3-card-4">
+        <div>
+        </div>
         <div class="w3-display-container">
-          <img src="images/2015_Portfolio_cover.jpg" style="width:100%; border-radius: 25px" alt="Profile">
+          <img src="images/2015_Portfolio_cover.jpg" style="width:100%; box-shadow:0 4px 8px 0 #808080; padding: 10px;" alt="Profile">
           <!--<div class="w3-display-bottomleft w3-container w3-text-black">-->
-          <div>
-            <h2>Jitatrin Jetwiriyanon</h2>
-          </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <hr>
-
+          <img src="images/personalDetail.png" style="width:100%">
         </div>
       </div><br>
 
@@ -101,128 +131,108 @@ ul.tab li a:focus, .active {
     <div class="rightSide">
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <ul class="tab">
-          <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'tap1')" id="defaultOpen">Work Experience</a></li>
-          <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'tap2')">PortFolio</a></li>
-          <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'tap3')">Indie</a></li>
+          <li><a href="javascript:void(0)" class="tablinks" onclick="tabFunction(event, 'tap1')" id="defaultOpen">Education</a></li>
+          <li><a href="javascript:void(0)" class="tablinks" onclick="tabFunction(event, 'tap3')">Skill</a></li>
+          <li><a href="javascript:void(0)" class="tablinks" onclick="tabFunction(event, 'tap2')
+          ">Experience</a></li>
+          <li><a href="javascript:void(0)" class="tablinks" onclick="tabFunction(event, 'tap4')">Portfolio</a></li>
         </ul>
-
-        <div id="tap1" class="tabcontent">
-
-        <div class="w3-container w3-card-2 w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-          <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem.</p>
-          <hr>
+      <div id="tap1" class="tabcontent">
+        <div class="w3-container w3-card-2">
+          <img src="images/Education.png" style="width:100%">
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur </p>
-          <hr>
+        <div class="w3-container w3-card-2">
+          <img src="images/grade.png" style="width:100%">
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
-      </div>
-      </div>
-        <div id="tap2" class="tabcontent">
-      <div class="w3-container w3-card-2 w3-white">
-         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+        <div class="w3-container w3-card-2">
+          <img src="images/grade1.png" style="width:100%">
         </div>
       </div>
 
+      <div id="tap2" class="tabcontent">
+        <div class="w3-container w3-card-2">
+        <div class="w3-container">
+            <img src="images/Career.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+            <img src="images/work_exp1.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+            <img src="images/cert1.jpg" style="width:100%">
+        </div>
+        <div class="w3-container">
+            <img src="images/cert2.jpg" style="width:100%">
+        </div>
+      </div>
+      </div>
+      
+      <div id="tap3" class="tabcontent">
+      <div class="w3-container w3-card-2">
+        <div class="w3-container">
+          <img src="images/Languages.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/skill.png" style="width:100%">
+        </div>
+      </div>
+      </div>
+
+        <div id="tap4" class="tabcontent">
+        <div class="w3-container w3-card-2">
+        <div class="w3-container">
+          <img src="images/Reward.png" style="width:100%">
         </div>
 
-        <div id="tap3" class="tabcontent">
-        <div class="w3-container w3-card-2 w3-white">
-         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Jitatrin Jetwiriyanon</h2>
-<div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <hr>
+         <div class="w3-container">
+          <img src="images/Olympial.png" style="width:100%">
+        </div>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
-              <div class="w3-center w3-text-white">90%</div>
-            </div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:75%">
-              <div class="w3-center w3-text-white">75%</div>
-            </div>
-          </div>
-          <p>Media</p>
-          <div class="w3-progress-container w3-round-xlarge w3-small">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:50%">
-              <div class="w3-center w3-text-white">50%</div>
-            </div>
-          </div>
-          <br>
+         <div class="w3-container">
+          <img src="images/Shadow.png" style="width:100%">
+        </div>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-progress-container w3-round-xlarge">
-            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:25%"></div>
-          </div>
-          <br>
+         <div class="w3-container">
+          <img src="images/racing.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/Battle.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/Title.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/xdrive.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/xdrive1.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/xdrive2.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/loginM.png" style="width:100%">
+        </div>
+         <div class="w3-container">
+          <img src="images/mobile.png" style="width:100%">
+        </div>
+      
+        <div class="w3-container">
+          <img src="images/login.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/LOPA_3.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/insee.png" style="width:100%">
+        </div>
+        <div class="w3-container">
+          <img src="images/insee1.png" style="width:100%">
         </div>
         
-      
       </div>
-
-
       </div>
         </div>
  </div>
-        
- 
-
-
-
-
-      
-
-
-
     <!-- End Right Column -->
     </div>
     
@@ -232,7 +242,7 @@ ul.tab li a:focus, .active {
   <!-- End Page Container -->
 </div>
 <script>
-function openCity(evt, cityName) {
+function tabFunction(evt, name) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -242,7 +252,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
