@@ -540,7 +540,21 @@ opacity: 0;
 
 </style>
 
+
 <body>
+<!--
+<iframe allow="autoplay" width="500" height="500"
+src="HBD_instrumental.mp3">
+</iframe>
+<audio id="player" autoplay controls><source src="HBD_instrumental.mp3" type="audio/mp3"></audio>
+-->
+<audio id="playerAudio" autoplay><source src="HBD_instrumental.mp3" type="audio/mp3"></audio>
+
+  <!--
+<audio controls autoplay loop>
+  <source src="HBD_instrumental.mp3" type="audio/MP3">
+</audio>
+-->
    <div class="wrapper">
       <div class="text">
         <h1 style="margin-top: 50px">Happy Birthday</h1>
@@ -558,7 +572,6 @@ opacity: 0;
         <div class="ballon"></div>
         <div class="ballon"></div>
       </div>
-
       <!--
       <div class="strawberry">
         <div class="strawberryChild">
@@ -600,11 +613,7 @@ opacity: 0;
           <img src="img/miki4.png" class="imgMiki"></img>
         </div>
       </div>
-     
-
-
-    </div>
-        
+    </div>    
 <!--
   <div class="birthday-container">
   <h1 class="birthday-container__text">Happy Birthday<br>MIKI!</h1><br>
@@ -624,7 +633,6 @@ style="border:1px solid #d3d3d3;">
 Your browser does not support the canvas element.
 </canvas>
 -->
-
   <script>
     /*
     var canvas = document.getElementById("myCanvas");
@@ -648,6 +656,12 @@ Your browser does not support the canvas element.
 //[...document.querySelectorAll('.love-button.love-button--loved')]
 //   .forEach(div => { div.click(); })
 
+document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('playerAudio').play();
+    //document.removeEventListener('click', musicPlay);
+}
+
 
 var x = document.getElementsByClassName("miki");
 var i;
@@ -663,7 +677,6 @@ for (i = 0; i < x.length; i++) {
     div.style.msTransform     = 'rotate('+deg+'deg)'; 
     div.style.oTransform      = 'rotate('+deg+'deg)'; 
     div.style.transform       = 'rotate('+deg+'deg)'; 
-
     rotated = !rotated;
   };
 }
@@ -702,13 +715,6 @@ for (i = 0; i < x.length; i++) {
 }
 */
 
-
-
-
-
-
-
   </script>
-
 </body>
 </html>
